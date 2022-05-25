@@ -1,0 +1,163 @@
+body {
+    background-color: lightcyan;
+}
+
+.flex-container {
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    background-color: lightcyan;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    justify-content: space-between;
+    height: max-content;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.commentary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment {
+    background-color: lightcyan;
+    border: none;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.grid-board {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(11, auto);
+    margin: 32px;
+    padding: 32px;
+    grid-gap: 8px;
+}
+
+.upper-containers, .lower-containers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+}
+
+.upper-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between!important;
+}
+
+.lower-containers {
+    margin-bottom: 32px;
+}
+
+.square {
+    display: flex;
+    padding: 16px;
+    width: 3%;
+    height: 3%;
+    text-align: center;
+    border-radius: 50%;
+    border: solid black;
+}
+
+.grey-square {
+    background-color: darkgray;
+    border: solid black;
+}
+
+.green-square, .green {
+    background-color: lightseagreen;
+    border: solid black;
+}
+
+.red-square, .red {
+    background-color: crimson;
+    border: solid black;
+}
+
+.blue-square, .blue {
+    background-color: lightskyblue;
+    border: solid black;
+}
+
+.yellow-square, .yellow {
+    background-color: gold;
+    border: solid black;
+}
+
+.dice-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    color: black;
+    border: solid black;
+    transition: transform 0.5s ease-in-out;
+    font-size: 10%;
+    font-weight: bolder;
+}
+
+.dice-square:hover {
+    transform: scale(5.0);
+}
+
+.empty-square {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign {
+    font-size: 50%;
+}
+
+.reset-button {
+    background-color: black;
+    color: lightcyan;
+    border: solid black;
+    border-radius: 50%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 80%;
+    font-weight: 900;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 15%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.reset-button:hover {
+    transform: scale(1.2);
+}
+.fa-github {
+    color: black;
+    font-size: 16px;
+    transition: transform .5s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
